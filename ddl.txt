@@ -1,0 +1,29 @@
+CREATE TABLE "customers" (
+	"id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+	"username" varchar(255) NOT NULL,
+	"password" varchar(255) NOT NULL,
+	"created_at" datetime, 
+	"updated_at" datetime
+);
+
+CREATE TABLE "movies" (
+	"id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+	"title" varchar(255) NOT NULL, 
+	"description" varchar(255) NOT NULL,
+	"year_filmed" varchar(255) NOT NULL, 
+	"genre" varchar(255) NOT NULL, 
+	"rented" boolean NOT NULL, 
+	"movie_library_id" INTEGER NOT NULL, 
+	"created_at" datetime, 
+	"updated_at" datetime
+);
+	
+CREATE TABLE "movie_libraries" (
+	"id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+	"type" varchar(255) NOT NULL, 
+	"created_at" datetime, 
+	"updated_at" datetime
+);
+
+	
+	
