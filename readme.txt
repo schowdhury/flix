@@ -1,3 +1,5 @@
+This is a code sample demo app I built for a job interview.  It's simply a movie rental system with a movie library.  
+
 In the project root:
 Run demo with: ruby demo.rb
 Run specs with: rspec spec
